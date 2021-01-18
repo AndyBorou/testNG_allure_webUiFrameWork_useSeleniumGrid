@@ -16,6 +16,6 @@ public class BaseTestGrid {
 
     @AfterClass
     public void tearDown() {
-        WebDriverInstansiator.getDriver().quit();
+         WebDriverInstansiator.getDriver().quit();
     }
 }
