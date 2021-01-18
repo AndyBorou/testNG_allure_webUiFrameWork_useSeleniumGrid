@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ScheduleBusTest" parallel="tests" thread-count="5">
+    <test name="ChromeTest" verbose="1" parallel="true">
+        <parameter name="browserName" value="chrome" />
+        <classes>
+            <class name="testsRunFromTestNgFile.test.TestGoogleSearch" />
+        </classes>
+    </test>
+    <test name="FirefoxTest" verbose="1" parallel="true">
+        <parameter name="browserName" value="firefox" />
+        <classes>
+            <class name="testsRunFromTestNgFile.test.TestGoogleSearch" />
+        </classes>
+    </test>
+    <test name="LocalChromeTest" verbose="1" parallel="true">
+        <parameter name="browserName" value="local_chrome" />
+        <classes>
+            <class name="testsRunFromTestNgFile.test.TestGoogleSearch" />
+        </classes>
+    </test>
+</suite>
